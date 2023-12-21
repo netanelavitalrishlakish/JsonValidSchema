@@ -1,0 +1,513 @@
+/* border */
+.frame {
+  border: 3px solid rgb(208, 88, 204);
+  padding: 90px;
+  padding-top: 10px;
+  width: 2200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-sizing: border-box; /* Include the border within the specified width */
+}
+
+/* to order forms in list*/
+li {
+  float: left;
+  padding: 25px;
+}
+
+/* css background message green or red in div error/valid*/
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+  word-wrap: break-word;
+}
+
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+  word-wrap: break-word;
+}
+
+.success-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 30px;
+  border-radius: 3px;
+  width: 650px;
+  text-align: center;
+  margin-left: 630px;
+  font-size: 30px;
+}
+
+/* css to button check - checkJsonToSchema() */
+.checkButton {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkButtonAfterClick {
+  background-color: #008CBA;
+  border: 3px solid white;
+  border-radius: 30px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: white;
+  font-size: 20px;
+  display: block;
+  margin: 10px auto;
+
+}
+
+.checkButtonAfterClick:hover {
+box-shadow: 0 0 10px 0 white inset, 0 0 20px 2px rgb(208, 88, 204);;
+border: 3px solid rgb(208, 88, 204); /* Add this line to maintain the border size on hover */
+position: relative; /* Add this line to prevent movement of the button */
+}
+
+
+/* css to button upload file */
+input::file-selector-button {
+  background-image: linear-gradient(
+    to right,
+    #18c9ff,
+    #9b00af,
+    #319197 100%,
+    #319197 200%
+  );
+  background-position-x: 0%;
+  background-size: 200%;
+  border: 0;
+  border-radius: 58px;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+}
+
+input::file-selector-button:hover {
+  background-position-x: 100%;
+  transform: scale(0.9);
+}
+
+// number row for textarea
+.classTextareaJson {
+
+  line-height: 24px;
+  resize: none;
+  font-size: 20px;
+}
+
+.classTextareaSchema 
+{
+  line-height: 24px;
+  resize: none;
+  font-size: 20px;
+
+}
+
+
+/* CSS save button */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+button.save {
+  background-image: linear-gradient(
+    to right,
+    #ad6eca,
+    #dfdadf 100%,
+  );
+  background-position-x: 0%;
+  background-size: 200%;
+  border: 0;
+  border-radius: 58px;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+  margin-left: 280px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+button.save:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+button.save2:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+button.save2 {
+  background-image: linear-gradient(
+    to right,
+    #ad6eca,
+    #dfdadf 100%,
+  );
+  background-position-x: 0%;
+  background-size: 200%;
+  border: 0;
+  border-radius: 58px;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+  margin-left: 1200px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+
+/* css to select */
+select {
+  text-align: right; /* Align the entire select element to the right */
+}
+/* css to optgroup */
+optgroup[label="מס הכנסה"],
+optgroup[label="מע''מ"],
+optgroup[label= "ניכויים"],
+optgroup[label="סכמות מס הכנסה"],
+optgroup[label="סכמות מע''מ"],
+optgroup[label= "סכמות ניכויים"] {
+  text-align: right; /* Align the labels to the right */
+}
+
+
+//more info
+.field {
+  position: relative;
+  padding: 20px;
+  margin-left: 350px;
+}
+
+.field button.has-tooltip {
+  padding: 30px 37px;
+  border: none;
+  outline: none;
+  background:white;
+  transition: 0.15s ease-in-out;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.field button.has-tooltip:hover,
+.field button.has-tooltip:focus {
+  background: darken(#47b8e0, 10%);
+}
+
+.field .tooltip {
+  display: none;
+  position: absolute;
+  top: auto;
+  bottom: calc(100% + 10px);
+  left: 20%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(165, 147, 224, 0.75);
+  text-align: center;
+  color: white;
+  transition: opacity 0.15s ease-in-out;
+  max-width: 100%;
+  z-index: 5;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+
+.field .tooltip p {
+  margin: 0;
+}
+
+.field button.has-tooltip:hover + .tooltip,
+.field button.has-tooltip:focus + .tooltip {
+  display: block;
+}
+
+.field .tooltip img {
+  max-width: 100%;
+}
+
+.field .tooltip:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.field .has-tooltip {
+  position: relative;
+  padding-left: 40px;
+}
+
+.field .has-tooltip .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+}
+
+
+
+//clear
+.clearData {
+  position: relative;
+  padding: 20px;
+}
+
+.clearData button.has-tooltip {
+  padding: 30px 37px;
+  border: none;
+  outline: none;
+  background: white;
+  transition: 0.15s ease-in-out;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.clearData button.has-tooltip:hover,
+.clearData button.has-tooltip:focus {
+  background: darken(pink, 10%);
+}
+
+.clearData .tooltip { //SAGOL
+display: none;
+position: absolute;
+top: -50px;
+right:-55%;
+transform: translateX(-50%);
+padding: 10px;
+padding-right: 20px;  //to show text in only row and center from right
+border-radius: 5px;
+background: rgba(165, 147, 224, 0.75);
+text-align: center;
+color: white;
+transition: opacity 0.15s ease-in-out;
+max-width: 100%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+z-index: 5;
+font-size: 20px;
+}
+
+
+.clearData .tooltip p {
+  margin: 0;
+}
+
+.clearData button.has-tooltip:hover + .tooltip,
+.clearData button.has-tooltip:focus + .tooltip {
+  display: block;
+}
+
+.clearData .tooltip img {
+  max-width: 100%;
+}
+
+.clearData .tooltip:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.clearData .has-tooltip {
+  position: relative;
+  padding-left: 40px; /* Adjust the padding as needed */
+}
+
+.clearData .has-tooltip .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  width: 55px; /* Adjust the width as needed */
+  height: 55px; /* Adjust the height as needed */
+}
+
+//row top
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+}
+
+.center {
+  flex: 3;
+}
+
+.right {
+  flex: 1;
+}
+
+
+/* all right reserved netanel avital */
+.allRight {
+  display: block; /* Ensure the image is treated as a block element */
+  margin-left: auto; /* Set left margin to auto */
+  margin-right: auto; /* Set right margin to auto */
+  padding-top: 25px;
+}
+
+
+///////////////To json///////////////////////
+#codeEditor, #lineCounter {
+  font-family: lucida console, courier new, courier, monospace;
+  margin: 0;
+  padding: 10px 0;
+  /*padding left here move the number*/
+  padding-left: 25px;  
+  height: 50vh;
+  border-radius: 0;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.4;
+  outline: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#lineCounter:focus-visible,
+#codeEditor:focus-visible {
+  outline: none;
+}
+
+.lineNumbers {
+  display: flex;
+  border-color: transparent;
+  overflow-y: hidden;
+  text-align: left;
+  box-shadow: none;
+  background-color: #DCDCDC	;
+  color: black;
+  position: absolute;
+  width: 3.5rem;
+}
+
+.lineNumbers pre {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line;
+}
+
+.red-line {
+  color: red;
+  font-size: bold;
+}
+
+.black-line {
+  color: black;
+  font-size: bold;
+}
+
+#codeEditor {
+  padding-left: calc(3.5rem + 5px);
+  width: 100%;
+  /* Determine appearance of code editor */
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+///////////////To Schema///////////////////////
+#codeEditor2, #lineCounter2 {
+  font-family: lucida console, courier new, courier, monospace;
+  margin: 0;
+  padding: 10px 0;
+  /*padding left here move the number*/
+  padding-left: 25px;  
+  height: 50vh;
+  border-radius: 0;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.4;
+  outline: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#lineCounter2:focus-visible,
+#codeEditor2:focus-visible {
+  outline: none;
+}
+
+.lineNumbers2 {
+  display: flex;
+  border-color: transparent;
+  overflow-y: hidden;
+  text-align: left;
+  box-shadow: none;
+  background-color: #DCDCDC	;
+  color: black;
+  position: absolute;
+  width: 3.5rem;
+}
+
+.lineNumbers2 pre {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line;
+}
+
+.red-line {
+  color: red;
+  font-size: bold;
+}
+
+#codeEditor2 {
+  padding-left: calc(3.5rem + 5px);
+  width: 100%;
+  /* Determine appearance of code editor */
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+

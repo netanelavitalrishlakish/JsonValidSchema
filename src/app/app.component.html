@@ -1,0 +1,137 @@
+<!-- Top Row -->
+<div class="frame">
+  <div class="row" style="margin-top: -27px;">
+    <div class="left">
+      <!-- more info error -->
+      <div class="field" style="margin-left: 30px;">
+        <button class="has-tooltip">
+          <img class="icon" src="assets/info.png" alt="Info Icon">
+        </button>
+        <span class="tooltip purple">
+          <p>{{this.moreInfo}}</p>
+        </span>
+      </div>
+    </div>
+    <div class="center">
+      <!-- icon program -->
+      <div style="text-align: center;">
+        <img src="assets/bareket2.png">
+      </div>
+    </div>
+    <div class="right">
+      <!-- clear -->
+      <div class="clearData" style="margin-left:240px;">
+        <button class="has-tooltip" (click)="refreshScreen()">
+          <img class="icon" src="assets/clear.png" alt="Info Icon"/>
+        </button>
+        <span class="tooltip purple">
+          <p>Click To Clear Screen</p>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALL FORMS -->
+  <ul style="list-style-type: none; margin-top: -55px;">
+    <li>
+      <!-- form side left for json file display -->
+      <form>
+        <div style="text-align: center; border: 1px solid black;padding-bottom: 15px;">
+           
+          <button (click)="fixSpaceAndLineJson()" style="border: none;">
+            <img src="assets/order.png" style="width: 60px;height: 60px;">
+          </button>
+          <button (click)="clearTextareaAndLineNumbersJson()" style="border: none;" >
+            <img src="assets/clear.png" style="width: 50px;height: 50px;margin-left: 800px;">
+          </button>
+          <h1 style="text-decoration: underline;">:בחר ג'סון</h1>
+          <input type="file" id="fileInput" (change)="uploadFileJson($event)">
+          <select (change)="selectJsonFromList($event)">
+            <option value="">בחר מהרשימה: </option>
+            <optgroup label="מס הכנסה">
+              <option value="json1.json">טופס 150</option>
+              <option value="json2.json">דוח 1301</option>
+            </optgroup>
+            <optgroup label="מע''מ">
+              <option value="json3.json">טופס החזר לתייר</option>
+              <option value="json4.json">עוסק פטור</option>
+              <option value="json5.json">הרשאות לחיוב חשבון מעמ</option>
+            </optgroup>
+            <optgroup label="ניכויים">
+              <option value="json6.json">אישור ניכוי מס במקור</option>
+              <option value="json7.json">מגן</option>
+            </optgroup>
+          </select>
+        </div>
+        <br><br>
+        <div style="display: flex; align-items: center;">
+          <div style="border: 1px solid black;" class="lineNumbers" >
+            <pre id="lineCounter" readonly></pre>
+          </div>
+          <div class="codeEditorWrapper" style="width: 930px;">
+            <textarea id="codeEditor"  wrap="off" class="classTextareaJson" rows="45" cols="60" [value]="dataInTextarea" (input)="onTextareaChange($event); lineCounter();"></textarea>
+          </div>       
+         </div>      
+      </form>
+    </li>
+  
+    <li>
+      <!-- form side right for schema file display -->
+      <form>
+        <div style="text-align: center; border: 1px solid black;padding-bottom: 15px;">
+          <button (click)="fixSpaceAndLineschema()" style="border: none;">
+            <img src="assets/order.png" style="width: 60px;height: 60px;">
+          </button>
+          <button (click)="clearTextareaAndLineNumbersSchema()" style="border: none;" >
+            <img src="assets/clear.png" style="width: 50px;height: 50px;margin-left: 800px;">
+          </button>
+          <h1 style="text-decoration: underline;">:בחר סכמה</h1>
+          <input type="file" id="schemaFile" (change)="uploadFileSchema($event)">
+          <select (change)="selectSchemaFromList($event)">
+            <option value="">בחר מהרשימה: </option>
+            <optgroup label="סכמות מס הכנסה">
+              <option value="schema1.json">טופס 150</option>
+              <option value="schema2.json">דוח 1301</option>
+            </optgroup>
+            <optgroup label="סכמות מע''מ">
+              <option value="schema3.json">טופס החזר לתייר</option>
+              <option value="schema4.json">עוסק פטור</option>
+              <option value="schema5.json">הרשאות לחיוב חשבון מעמ</option>
+            </optgroup>
+            <optgroup label="סכמות ניכויים">
+              <option value="schema6.json">אישור ניכוי מס במקור</option>
+              <option value="schema7.json">מגן</option>
+            </optgroup>
+          </select>
+        </div>
+        <br><br>
+        <div style="display: flex; align-items: center;">
+          <div style="border: 1px solid black;" class="lineNumbers2" >
+            <pre id="lineCounter2" readonly></pre>
+          </div>
+          <div class="codeEditorWrapper" style="width: 930px;">
+            <textarea id="codeEditor2"  wrap="off" class="classTextareaSchema" rows="45" cols="60" [value]="schemaInTextarea" (input)="onTextareaChangeSchema($event); lineCounter2();"></textarea>
+          </div>       
+         </div>   
+      </form>
+    </li>
+  </ul>
+  <!-- Buttom Row -->
+  <!-- buttons save -->
+  <button class="save" (click)="saveDataJson()">שמור ג'סון</button>
+  <button class="save2" (click)="saveSchema()">שמור סכמה</button>
+  <!-- buttons check valid -->
+  <div>
+    <button (click)="checkJsonToSchema()" class="checkButton checkButtonAfterClick">בדיקת קובץ ג'סון לסכמה</button>
+    <!-- Get an indication of whether the message is correct or not -->
+    <div id="myDivGreen" class="success-msg" style="display: none;"></div>
+    <div id="myDivRed" class="error-msg" style="display: none;"></div>
+  </div>
+</div>
+  <!--creadit -->
+<div style="text-align: center;padding-top: 25px;font-size: 35px;">
+{{this.netanel}}
+</div>
+<br>
+
+

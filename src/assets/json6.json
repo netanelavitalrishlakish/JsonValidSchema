@@ -1,0 +1,29 @@
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 30,
+    "address": {
+      "street": "123 Main Street",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA"
+    },
+    "education": {               
+      "degree": "Bachelor's",
+      "major": "Computer Science",
+      "university": "ABC University"
+    },
+    "workExperience": [                 
+      {
+        "company": "XYZ Inc.",
+        "position": "Software Engineer",
+        "duration": "2 years"
+      },
+      {
+        "company": "123 Corp.",
+        "position": "Senior Developer",
+        "duration": "3 years"
+      }
+    ],
+    "skills": ["JavaScript", "Python", "React"]
+}

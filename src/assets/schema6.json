@@ -1,0 +1,73 @@
+{
+    "type": "object",
+    "properties": {
+      "firstName": {
+        "type": "string"
+      },
+      "lastName": {
+        "type": "string"
+      },
+      "age": {
+        "type": "integer"
+      },
+      "address": {
+        "type": "object",
+        "properties": {
+          "street": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          }
+        },
+        "required": ["street", "city", "state", "country"]
+      },
+      "education": {
+        "type": "object",
+        "properties": {
+          "degree": {
+            "type": "string"
+          },
+          "major": {
+            "type": "string"
+          },
+          "university": {
+            "type": "string"
+          }
+        },
+        "required": ["degree", "major", "university"]
+      },
+      "workExperience": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "company": {
+              "type": "string"
+            },
+            "position": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "string"
+            }
+          },
+          "required": ["company", "position", "duration"]
+        }
+      },
+      "skills": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": ["firstName", "lastName", "age", "address", "education", "workExperience", "skills"]
+  }
+  

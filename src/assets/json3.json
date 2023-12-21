@@ -1,0 +1,175 @@
+{
+  "tikShana": {
+    "misTik": 104109,
+    "shnatMas": 2020
+  },
+  "tofes150List": [
+    {
+      "pirteyCheverHachutz": {
+        "shemCheverChutzHeb": "9????",
+        "shemCheverChutzEng": "shira",
+        "misparMezahe": 543212346,
+        "misparRishumChul": "1111",
+        "misparZihuyMas": "22222",
+        "mohedRechishatZechuyot": "2020-11-11T08:33:33",
+        "medinatToshvut": {
+          "code": 860
+        },
+        "medinatHithagdut": {
+          "code": 860
+        },
+        "ktovetMisradim": "pohaley",
+        "ktovetMishloachDohar": "qwerty",
+        "ktovetEmail": "sss@www.com",
+        "telephone": "2222222",
+        "kidomet": {
+          "code": "256"
+        }
+      },
+      "peilutMisuy": {
+        "sivugMasYesNo": 1,
+        "cheverHachuthYesNo": 1,
+        "tchumIsuk": "1234",
+        "ofiPeilut": 1
+      },
+      "pirteyHachzaka": {
+        "hachzakaMenayotSof": 16.5,
+        "hachzakaMenayotGavoha": 1,
+        "meRivcheyCheverChutzhSof": 1,
+        "meRivcheyCheverChutzhGavoha": 1,
+        "meNechasimPerukSof": 1,
+        "meNechasimPerukGavoha": 1,
+        "meZechuyotHatzbahaSof": 1,
+        "meZechuyotHatzbahaGavoha": 1,
+        "meZechuyotNosafot": "ssss",
+        "meZechuyotNosafotSof": 1,
+        "meZechuyotNosafotGavoha": 1,
+        "zechuyotAcherot": "aaaa",
+        "hachzakaZechuyotSof": 1,
+        "hachzakaZechuyotGavoha": 1,
+        "zeRivcheyCheverChutzhSof": 1,
+        "zeRivcheyCheverChutzhGavoha": 1,
+        "zeNechasimPerukSof": 1,
+        "zeNechasimPerukGavoha": 1,
+        "zeZechuyotHatzbahaSof": 1,
+        "zeZechuyotHatzbahaGavoha": 1,
+        "zeZechuyotNosafot": "qwer",
+        "zeZechuyotNosafotSof": 1,
+        "zeZechuyotNosafotGavoha": 1
+      },
+      "direktoryonMeydaKaspi": {
+        "nishletetZara": 2,
+        "mishlachYadZara": 2,
+        "noseyMisraIsraelim": 2,
+        "megishMedinaGomelet": 2,
+        "hevraIskitEshkolHavarot": 2,
+        "hevratMehatim": 2,
+        "hachnasotPasiviyot": 2,
+        "revachimPasiviim": 2,
+        "shiurHacnasotPasiviyot": 2,
+        "kayamotHacnasotPturot": 2,
+        "nukoHozaahot": 2,
+        "shiurRevahimPasiviimYaduaa": 2,
+        "shiurRevahimPasiviim": 2,
+        "shiurMas15": 2,
+        "emtzaiShlitaIsraelim": 2,
+        "mishlachYadMeyuchad": 2,
+        "baaleyMenayot50": 2,
+        "shiurHacnasotYaduaa": 2,
+        "shiurHacnasotMimishlacYad": 2,
+        "makorRevahim": 2,
+        "shiurRevahimYaduaa": 2,
+        "shiurRevahimMimishlacYad": 2,
+        "shlitaIsraelim75": 2,
+        "mischarBursa30": 2,
+        "shinuyimMivne": 2,
+        "megishDochMehuhad": 2,
+        "hesberHotzaaAcheret": "ttttt"
+      }
+    },
+
+    {
+      "pirteyCheverHachutz": {
+        "shemCheverChutzHeb": "333",
+        "shemCheverChutzEng": "shira",
+        "misparMezahe": 544444444,
+        "misparRishumChul": "123456",
+        "misparZihuyMas": "1234",
+        "mohedRechishatZechuyot": "2020-11-11T08:33:33",
+        "medinatToshvut": {
+          "code": 860
+        },
+        "medinatHithagdut": {
+          "code": 860
+        },
+        "ktovetMisradim": "shaam",
+        "ktovetMishloachDohar": "shaam",
+        "ktovetEmail": "aaa@bbb.com",
+        "telephone": "123456",
+        "kidomet": {
+          "code": "256" 
+        }
+      },
+      "peilutMisuy": {
+        "sivugMasYesNo": 1,
+        "cheverHachuthYesNo": 1,
+        "tchumIsuk": "123",
+        "ofiPeilut": 1
+      },
+      "pirteyHachzaka": {
+        "hachzakaMenayotSof": 1,
+        "hachzakaMenayotGavoha": 1,
+        "meRivcheyCheverChutzhSof": 1,
+        "meRivcheyCheverChutzhGavoha": 1,
+        "meNechasimPerukSof": 1,
+        "meNechasimPerukGavoha": 1,
+        "meZechuyotHatzbahaSof": 1,
+        "meZechuyotHatzbahaGavoha": 1,
+        "meZechuyotNosafot": "uuu",
+        "meZechuyotNosafotSof": 1,
+        "meZechuyotNosafotGavoha": 1,
+        "zechuyotAcherot": "aaa",
+        "hachzakaZechuyotSof": 1,
+        "hachzakaZechuyotGavoha": 1,
+        "zeRivcheyCheverChutzhSof": 1,
+        "zeRivcheyCheverChutzhGavoha": 1,
+        "zeNechasimPerukSof": 1,
+        "zeNechasimPerukGavoha": 1,
+        "zeZechuyotHatzbahaSof": 1,
+        "zeZechuyotHatzbahaGavoha": 1,
+        "zeZechuyotNosafot": "pppp",
+        "zeZechuyotNosafotSof": 1,
+        "zeZechuyotNosafotGavoha": 1
+      },
+      "direktoryonMeydaKaspi": {
+        "nishletetZara": 1,
+        "mishlachYadZara": 1,
+        "noseyMisraIsraelim": 1,
+        "megishMedinaGomelet": 1,
+        "hevraIskitEshkolHavarot": 1,
+        "hevratMehatim": 1,
+        "hachnasotPasiviyot": 1,
+        "revachimPasiviim": 1,
+        "shiurHacnasotPasiviyot": 2,
+        "kayamotHacnasotPturot": 1,
+        "nukoHozaahot": 2,
+        "shiurRevahimPasiviimYaduaa": 1,
+        "shiurRevahimPasiviim": 2,
+        "shiurMas15": 1,
+        "emtzaiShlitaIsraelim": 1,
+        "mishlachYadMeyuchad": 1,
+        "baaleyMenayot50": 1,
+        "shiurHacnasotYaduaa": 1,
+        "shiurHacnasotMimishlacYad": 2,
+        "makorRevahim": 1,
+        "shiurRevahimYaduaa": 1,
+        "shiurRevahimMimishlacYad": 2,
+        "shlitaIsraelim75": 1,
+        "mischarBursa30": 1,
+        "shinuyimMivne": 1,
+        "megishDochMehuhad": 1,
+        "hesberHotzaaAcheret": "ttttt"
+      }
+    }
+  ]
+}

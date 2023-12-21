@@ -1,0 +1,597 @@
+{
+  "description": "List of tofes150",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "tikShana": {
+      "title": "tikShana",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "misTik": {
+          "title": "misTik",
+          "format": "int32",
+          "maximum": 999999999,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "shnatMas": {
+          "title": "shnatMas",
+          "format": "int32",
+          "maximum": 9999,
+          "minimum": 1900,
+          "type": "integer"
+        }
+      },
+      "required": ["misTik", "shnatMas"]
+    },
+    "tofes150List": {
+      "title": "tofes150List",
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": true,
+        "properties": {
+          "pirteyCheverHachutz": {
+            "title": "pirteyCheverHachutz",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "shemCheverChutzHeb": {
+                "title": "shemCheverChutzHeb",
+                "maxLength": 50,
+                "minLength": 0,
+                "pattern": "^([?-?0-9-!+:/, .()'\"]+$)",
+                "type": "string"
+              },
+              "shemCheverChutzEng": {
+                "title": "shemCheverChutzEng",
+                "maxLength": 50,
+                "minLength": 0,
+                "pattern": "^([a-zA-Z0-9-!+:/, .()'\"]+$)",
+                "type": "string"
+              },
+              "misparMezahe": {
+                "title": "misparMezahe",
+                "maximum": 599999999,
+                "minimum": 500000000,
+                "type": "integer"
+              },
+              "misparRishumChul": {
+                "title": "misparRishumChul",
+                "maxLength": 20,
+                "minLength": 0,
+                "pattern": "^([a-zA-Z0-9]+$)",
+                "type": "string"
+              },
+              "misparZihuyMas": {
+                "title": "misparZihuyMas",
+                "maxLength": 20,
+                "minLength": 0,
+                "pattern": "^([a-zA-Z0-9]+$)",
+                "type": "string"
+              },
+              "mohedRechishatZechuyot": {
+                "title": "mohedRechishatZechuyot",
+                "format": "date-time",
+                "type": "string"
+              },
+              "medinatToshvut": {
+                "title": "medinatToshvut",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "code": {
+                    "title": "code",
+                    "maximum": 999,
+                    "minimum": 0,
+                    "required": true,
+                    "type": "integer"
+                  }
+                }
+              },
+              "medinatHithagdut": {
+                "title": "medinatHithagdut",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "code": {
+                    "title": "code",
+                    "maximum": 999,
+                    "minimum": 0,
+                    "required": true,
+                    "type": "integer"
+                  }
+                }
+              },
+              "ktovetMisradim": {
+                "title": "ktovetMisradim",
+                "maxLength": 100,
+                "minLength": 0,
+                "required": true,
+                "type": "string"
+              },
+              "ktovetMishloachDohar": {
+                "title": "ktovetMishloachDohar",
+                "maxLength": 100,
+                "minLength": 0,
+                "required": true,
+                "type": "string"
+              },
+              "ktovetEmail": {
+                "title": "ktovetEmail",
+                "maxLength": 50,
+                "minLength": 0,
+                "pattern": "^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$",
+                "type": "string"
+              },
+              "telephone": {
+                "title": "telephone",
+                "maxLength": 20,
+                "minLength": 0,
+                "pattern": "^([0-9]+$)",
+                "type": "string"
+              },
+              "kidomet": {
+                "title": "kidomet",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "code": {
+                    "title": "code",
+                    "maxLength": 4,
+                    "minLength": 0,
+                    "pattern": "^([0-9]+$)",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "peilutMisuy": {
+            "title": "peilutMisuy",
+            "required": true,
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "sivugMasYesNo": {
+                "title": "sivugMasYesNo",
+                "format": "int32",
+                "enum": [ 1, 2 ],
+                "required": true,
+                "type": "integer"
+              },
+              "cheverHachuthYesNo": {
+                "title": "cheverHachuthYesNo",
+                "format": "int32",
+                "enum": [ 1, 2 ],
+                "required": true,
+                "type": "integer"
+              },
+              "tchumIsuk": {
+                "title": "tchumIsuk",
+                "maxLength": 70,
+                "minLength": 0,
+                "required": true,
+                "type": "string"
+              },
+              "ofiPeilut": {
+                "title": "ofiPeilut",
+                "format": "int32",
+                "enum": [ 1, 2 ],
+                "required": true,
+                "type": "integer"
+              }
+            }
+          },
+          "pirteyHachzaka": {
+            "title": "pirteyHachzaka",
+            "required": true,
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "hachzakaMenayotSof": {
+                "title": "hachzakaMenayotSof",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "required": true,
+                "type": "number"
+              },
+              "hachzakaMenayotGavoha": {
+                "title": "hachzakaMenayotGavoha",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "required": true,
+                "type": "number"
+              },
+              "meRivcheyCheverChutzhSof": {
+                "title": "meRivcheyCheverChutzhSof",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "meRivcheyCheverChutzhGavoha": {
+                "title": "meRivcheyCheverChutzhGavoha",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "meNechasimPerukSof": {
+                "title": "meNechasimPerukSof",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "meNechasimPerukGavoha": {
+                "title": "meNechasimPerukGavoha",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "meZechuyotHatzbahaSof": {
+                "title": "meZechuyotHatzbahaSof",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "meZechuyotHatzbahaGavoha": {
+                "title": "meZechuyotHatzbahaGavoha",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "meZechuyotNosafot": {
+                "title": "meZechuyotNosafot",
+                "maxLength": 50,
+                "minLength": 0,
+                "pattern": "^([?-? a-zA-Z]+$)",
+                "type": "string"
+              },
+              "meZechuyotNosafotSof": {
+                "title": "meZechuyotNosafotSof",
+                "format": "int32",
+                "maximum": 999999999,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "meZechuyotNosafotGavoha": {
+                "title": "meZechuyotNosafotGavoha",
+                "format": "int32",
+                "maximum": 999999999,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "zechuyotAcherot": {
+                "title": "zechuyotAcherot",
+                "maxLength": 50,
+                "minLength": 0,
+                "pattern": "^([?-? a-zA-Z]+$)",
+                "type": "string"
+              },
+              "hachzakaZechuyotSof": {
+                "title": "hachzakaZechuyotSof",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "hachzakaZechuyotGavoha": {
+                "title": "hachzakaZechuyotGavoha",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "zeRivcheyCheverChutzhSof": {
+                "title": "zeRivcheyCheverChutzhSof",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "zeRivcheyCheverChutzhGavoha": {
+                "title": "zeRivcheyCheverChutzhGavoha",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "zeNechasimPerukSof": {
+                "title": "zeNechasimPerukSof",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "zeNechasimPerukGavoha": {
+                "title": "zeNechasimPerukGavoha",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "zeZechuyotHatzbahaSof": {
+                "title": "zeZechuyotHatzbahaSof",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "zeZechuyotHatzbahaGavoha": {
+                "title": "zeZechuyotHatzbahaGavoha",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "zeZechuyotNosafot": {
+                "title": "zeZechuyotNosafot",
+                "maxLength": 50,
+                "minLength": 0,
+                "pattern": "^([?-? a-zA-Z]+$)",
+                "type": "string"
+              },
+              "zeZechuyotNosafotSof": {
+                "title": "zeZechuyotNosafotSof",
+                "format": "int32",
+                "maximum": 999999999,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "zeZechuyotNosafotGavoha": {
+                "title": "zeZechuyotNosafotGavoha",
+                "format": "int32",
+                "maximum": 999999999,
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "direktoryonMeydaKaspi": {
+            "title": "direktoryonMeydaKaspi",
+            "required": true,
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "nishletetZara": {
+                "title": "nishletetZara",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "mishlachYadZara": {
+                "title": "mishlachYadZara",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "noseyMisraIsraelim": {
+                "title": "noseyMisraIsraelim",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "megishMedinaGomelet": {
+                "title": "megishMedinaGomelet",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "hevraIskitEshkolHavarot": {
+                "title": "hevraIskitEshkolHavarot",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "hevratMehatim": {
+                "title": "hevratMehatim",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "hachnasotPasiviyot": {
+                "title": "hachnasotPasiviyot",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "revachimPasiviim": {
+                "title": "revachimPasiviim",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "shiurHacnasotPasiviyot": {
+                "title": "shiurHacnasotPasiviyot",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0.01,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "kayamotHacnasotPturot": {
+                "title": "kayamotHacnasotPturot",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "nukoHozaahot": {
+                "title": "nukoHozaahot",
+                "format": "int32",
+                "enum": [ 2, 3, 6, 7, 8, 9, 10 ],
+                "required": true,
+                "type": "integer"
+              },
+              "shiurRevahimPasiviimYaduaa": {
+                "title": "shiurRevahimPasiviimYaduaa",
+                "format": "int32",
+                "enum": [ 1, 2 ],
+                "required": true,
+                "type": "integer"
+              },
+              "shiurRevahimPasiviim": {
+                "title": "shiurRevahimPasiviim",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0.01,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "shiurMas15": {
+                "title": "shiurMas15",
+                "format": "int32",
+                "enum": [ 1, 2 ],
+                "required": true,
+                "type": "integer"
+              },
+              "emtzaiShlitaIsraelim": {
+                "title": "emtzaiShlitaIsraelim",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "mishlachYadMeyuchad": {
+                "title": "mishlachYadMeyuchad",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "baaleyMenayot50": {
+                "title": "baaleyMenayot50",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "shiurHacnasotYaduaa": {
+                "title": "shiurHacnasotYaduaa",
+                "format": "int32",
+                "enum": [ 1, 2 ],
+                "required": true,
+                "type": "integer"
+              },
+              "shiurHacnasotMimishlacYad": {
+                "title": "shiurHacnasotMimishlacYad",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0.01,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "makorRevahim": {
+                "title": "makorRevahim",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "shiurRevahimYaduaa": {
+                "title": "shiurRevahimYaduaa",
+                "format": "int32",
+                "enum": [ 1, 2 ],
+                "required": true,
+                "type": "integer"
+              },
+              "shiurRevahimMimishlacYad": {
+                "title": "shiurRevahimMimishlacYad",
+                "format": "double",
+                "multipleOf": 0.01,
+                "maximum": 100,
+                "minimum": 0.01,
+                "pattern": "\\d+(\\.\\d{1,2})?",
+                "type": "number"
+              },
+              "shlitaIsraelim75": {
+                "title": "shlitaIsraelim75",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "required": true,
+                "type": "integer"
+              },
+              "mischarBursa30": {
+                "title": "mischarBursa30",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "type": "integer"
+              },
+              "shinuyimMivne": {
+                "title": "shinuyimMivne",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "type": "integer"
+              },
+              "megishDochMehuhad": {
+                "title": "megishDochMehuhad",
+                "format": "int32",
+                "enum": [ 1, 2, 3, 4, 5 ],
+                "type": "integer"
+              },
+              "hesberHotzaaAcheret": {
+                "title": "hesberHotzaaAcheret",
+                "maxLength": 50,
+                "minLength": 0,
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "workExperience": [
+      {
+        "company": "Acme Corp",
+        "position": "Software Engineer"
+      },
+      {
+        "company": 12345
+      },
+      {
+        "position": "Project Manager"
+      }
+    ]
+  }
+  
